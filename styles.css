@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #090221;
+}
+
+.img {
+    position: relative;
+    display: flex;
+}
+
+.slice {
+    width: 120px;
+    height: 350px;
+    transition: .5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s ease;
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+.img-one {
+    background-image: url(./img/pexels-luck-galindo-544268.jpg);
+}
+
+.img-two {
+    background-image: url(./img/pexels-philippe-donn-1114690.jpg);
+}
+
+.img-three {
+    background-image: url(./img/pexels-rafael-guajardo-604684.jpg);
+}
+
+.slice-two {
+    background-position: -120px 0;
+}
+
+.img:hover .slice-one {
+    transform: translate(-50px, -20px) skewX(10deg);
+    -webkit-transform: translate(-50px, -20px) skewX(10deg);
+    -moz-transform: translate(-50px, -20px) skewX(10deg);
+    -ms-transform: translate(-50px, -20px) skewX(10deg);
+    -o-transform: translate(-50px, -20px) skewX(10deg);
+}
+
+.img:hover .slice-two {
+    transform: translate(50px, 20px) skewX(10deg);
+    -webkit-transform: translate(50px, 20px) skewX(10deg);
+    -moz-transform: translate(50px, 20px) skewX(10deg);
+    -ms-transform: translate(50px, 20px) skewX(10deg);
+    -o-transform: translate(50px, 20px) skewX(10deg);
+}
